@@ -1,0 +1,25 @@
+	El juego consiste en conseguir la mayor cantidad de puntaje recolectando las pelotas que
+van cayendo, cada color tiene un puntaje distinto: las amarillas dan 100 puntos,
+las celestes dan 150 puntos, mientras que las pelotas moradas y verdes quitan 100 y 150 
+puntos respectivamente.
+	Para comenzar a jugar es necesario abrir la escena Main Menu o Scene Game.  
+Si se abre Main Menu, el juego comienza con una pantalla donde se puede escoger 
+si salir de este (Exit Game) o comenzar a jugar (New Game). Por otro lado, es posible
+comienzar inmediatamente si se escoge Scene Game.  
+	Las mecánicas del juego consisten en mover el personaje (El Shop) con las teclas A,S,D y W o las teclas
+direccionales del teclado, además se puede aumentar la velocidad con la tecla X. El juego
+termina cuando se termina el tiempo y por ende dejan de caer pelotas. 
+	Cada pelota se instancia con prefabs, además tiene cada una un temporizador para aparecer en pantalla,
+si se quiere, es posible apretar el botón C para cambiar a otra cámara, tanto el personaje es movido con 
+rigidbody, mientras que la velocidad de las pelotas puede cambiarse con la función transform.position. Se 
+utilizó un sistema de switch para poder ordenar el sistema de UI, donde el texto puede ser de tipo Puntaje 
+(para que se pueda ver el puntaje cambiando en pantalla), Texto, Timer (para ver el tiempo en pantalla) y
+Pausa (para que al apretar Enter aparezca la palabra PASUED). 
+	Existe un sistema de colisiones con el personaje en el que el vaso posee rigidbody y un collider , mientras
+que lo que contiene el vaso es tiene otro, el cual es utilizado para contar los puntos y destruir la pelota que lo 
+toque.
+	El personaje cuenta con cuatro animaciones para el movimiento y además a medida que avanza el tiempo, 
+comienza a "anochecer".
+	Las ideas posteriores serían hacer más escenas, agregar además opciones de pantalla y audio,
+incluír más canciones, un sistema de ranking y hacer una opción multijugador. 
+
